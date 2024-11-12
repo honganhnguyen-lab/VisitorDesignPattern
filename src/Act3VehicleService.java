@@ -26,10 +26,6 @@ public class Act3VehicleService {
         int total = 0;
         for(IVehicle vehicle : vehicles){
             total = total + emissionsStrategy.computeEmissionsFee(vehicle) + vehicle.accept(inspector) ;
-            System.out.println("vehicle" + vehicle);
-            System.out.println("calculateTotal" + vehicle.accept(inspector));
-            System.out.println("computeEmissionsFee calculateTotal" + emissionsStrategy.computeEmissionsFee(vehicle));
-            System.out.println("total" + total);
         }
         return total;
     }
