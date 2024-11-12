@@ -22,4 +22,8 @@ public class Car implements IVehicle {
     public int accept(IVehicleInspector vehicleInspector) {
         return vehicleInspector.visit(this);
     }
+    @Override
+    public double co2Emissions() {
+        return 8887*(1+(0.05 * (2020- this.manufactureDate)));
+    }
 }

@@ -22,4 +22,9 @@ public class Motorbike implements IVehicle {
     public int accept(IVehicleInspector vehicleInspector) {
         return vehicleInspector.visit(this);
     }
+
+    @Override
+    public double co2Emissions() {
+        return 8887*(1+(0.01 * (1000-this.engineCapacity)));
+    }
 }
