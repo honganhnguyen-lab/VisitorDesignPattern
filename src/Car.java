@@ -23,7 +23,7 @@ public class Car implements IVehicle {
         return vehicleInspector.visit(this);
     }
     @Override
-    public double co2Emissions() {
-        return 8887*(1+(0.05 * (2020- this.manufactureDate)));
+    public float co2Emissions() {
+        return 8887*(1+(0.05f * (2020- this.manufactureDate)));
     }
 }

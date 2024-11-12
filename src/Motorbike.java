@@ -24,7 +24,7 @@ public class Motorbike implements IVehicle {
     }
 
     @Override
-    public double co2Emissions() {
-        return 8887*(1+(0.01 * (1000-this.engineCapacity)));
+    public float co2Emissions() {
+        return 8887*(1+(0.01f * (1000-this.engineCapacity)));
     }
 }

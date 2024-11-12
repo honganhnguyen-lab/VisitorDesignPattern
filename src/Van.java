@@ -23,7 +23,7 @@ public class Van implements IVehicle {
         return vehicleInspector.visit(this);
     }
     @Override
-    public double co2Emissions() {
-        return 8887*(1+(0.1 * (this.numberOfDoors - 2)));
+    public float co2Emissions() {
+        return 8887*(1+(0.1f * (this.numberOfDoors - 2)));
     }
 }
